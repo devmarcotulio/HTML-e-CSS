@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Minha primeira página</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="style.css">
+	<!--
+		<style>
+			h1,h2{
+				color:blue;
+			}
+		</style>
+		Esse style declarado fora da linha, faz parte do CSS do tipo interno(dentro do mesmo código)-->
+
+</head>
+
+<body>
+	<!--Comentários-->
+	<!--Id e class são dois comandos de fazer "gancho". O id não pode ser repetido, ja o comando class, pode ser repetido no código.-->
+
+	<a href="#coding">Usar a tag de link com id para fazer isso:</a>
+
+	<h1 id="titulo">Título</h1>
+
+	<h2 id="sub">Subtítulo</h2>
+
+	<d id="par">
+		<p id="principal">Paragráfo </p>
+		<!--O comando style faz parte do CSS, do tipo inline(mesma linha) <p style="color:red;"> ... </p>-->
+
+		<p><strong>Como fazer o texto ficar em negrito</strong></p>
+		<!--Também pode ser utilizado a tag <b> para negrito-->
+
+		<p><em>Como fazer o texto ficar em itálico</em></p>
+		<!--Também pode ser utilizado a tag <i>-->
+
+		<p><mark>Como fazer um texto com marcação</mark></p>
+
+		<p class="texto_rosa"><small>Como deixar um texto menor</small></p>
+
+		<p class="texto_rosa"><del>Como fazer um texto riscado</del></p>
+		<!--Para indicar que algo foi substituído por outra coisa. (Também pode ser utilizado a tag <s>-->
+
+		<p class="texto_rosa"><ins>Como fazer um texto sublinhado</ins></p>
+		<!--Para indicar que algo foi inserido. (Também pode ser utilizado a tag <u>-->
+
+		<p>Como fazer um texto <sub>subscript</sub></p>
+		<!--Fica abaixo do texto normal-->
+
+		<p>Como fazer um texto <sup>superscript</sup></p>
+		<!--O texto fica acima do texto normal-->
+		</div>
+
+		<a href="link.html">Como criar links</a>
+		<!--Como chamar o link-->
+
+		<br>
+		<!--Tag de quebra de linha. Também pode ficar sem o /-->
+
+		<figure>
+			<!--A tag figure indica que a imagem e a legenda se pertencem.-->
+			<img id="coding" src="https://idocode.com.br/wp-content/uploads/2021/07/programacao-scaled.jpg"
+				alt="Codigo de programação" width="300">
+			<figcaption>Foto de linhas de programação</figcaption>
+			<!--Tag de legenda de imagen.-->
+		</figure>
+
+		<br><br><br><br>
+		<!--Quanto mais tags você adiciona, maior o espaço-->
+
+		<a href="https://novaescola.org.br/conteudo/12303/como-levar-a-programacao-para-a-sala-de-aula">
+
+			<img src="imagens/cod.jpg" alt="Outro código" height="200">
+			<!--width e height servem para mudar o tamanho das imagens. Usar os dois pode causar distorção-->
+			<!--São as duas maneiras de se adicionar imagens ao site, colocando o link da imagem, ou a inserindo caso ja tenha baixado em seu computador.-->
+
+		</a>
+		<!--Com a imagem dentro da tag de link, eu consigo transformar a imagem em um link-->
+
+		<br><br><br><br>
+		<div id="listas">
+			<!--A tag div serve para deixar o codigo mais estruturado e facilitar tanto a leitura quanto a estilização pelo CSS.-->
+			<h2>Como fazer uma lista</h2>
+			<ul>
+				<li>Item 1</li>
+				<li>Item 2</li>
+				<li>Item 3</li>
+			</ul>
+			<!--Lista desordenada. A tag <li> serve para adicionar itens a lista-->
+
+			<h2>Lista ordenada</h2>
+			<ol>
+				<li>Item 1</li>
+				<li>Item 2</li>
+				<li>Item 3</li>
+			</ol>
+		</div>
+
+		<br><br><br><br>
+		<!--Tabelas-->
+		<table>
+			<tr>
+				<th>Nome</th>
+				<th>Telefone</th>
+				<th>Email</th>
+			</tr>
+			<tr>
+				<td>Marco Túlio Vieira Martins</td>
+				<td>(64)99330-0978</td>
+				<td>marcotulio_iub@hotmail.com</td>
+			</tr>
+			<tr>
+				<td>Lucas Vieira Martins</td>
+				<td>(64)99999-9999</td>
+				<td>lucaslvm.12@hotmail.com</td>
+			</tr>
+		</table>
+		<!--Criação de tabelas: <tr> linha da tabela, <th> parte de cima da tabela, os campos, <td> os dados da tabela.-->
+		
+		<br><br><br><br>
+		<!--Unidades de medidas (fixas)-->
+		<div id="cm"></div>
+		<div id="mm"></div>
+		<div id="in"></div>
+		<div id="px"></div>
+		<div id="pt"></div>
+		<div id="pc"></div>
+		<br><br>
+		<!--Para das espaço-->
+		
+		<br><br><br><br>
+		<!--Unidades de medidas (relativas)-->
+		Texto no body
+		<div class="container">
+			Texto no container
+			<div class="inside">
+				Texto no inside
+			</div>
+		</div>
+
+		<br><br><br><br>
+		<!--Maging e padding-->
+		<div class="primeira">Marco Tulio</div>
+		<div class="segunda"></div>
+		<div class="terceira"></div>
+
+		<br><br><br><br>
+		<!--Bordas-->
+		<div class="borda">
+			Contéudo
+		</div>
+
+		<div class="quadrado borda"></div>
+		<br><br><br><br><br><br>
+		<!--Box model-->
+		<div class="conntainer">
+			<div class="content">
+				CONTEÚDO
+			</div>
+		</div>
+		<br><br><br><br><br><br>
+
+		<!--Como ajustar elementos de texto-->
+		<p class="texto">Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem
+			Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido
+			pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. Ele sobreviveu não
+			apenas cinco séculos, mas também o salto para a composição eletrônica, permanecendo essencialmente
+			inalterado. Foi popularizado na década de 1960 com o lançamento de folhas Letraset contendo passagens de
+			Lorem Ipsum e, mais recentemente, com software de editoração eletrônica como Aldus PageMaker, incluindo
+			versões de Lorem Ipsum.
+		</p>
+
+		<p class="fonte">Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem
+			Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido
+			pegou uma cozinha de tipos e embaralhou-a para fazer um livro de espécimes de tipos. Ele sobreviveu não
+			apenas cinco séculos, mas também o salto para a composição eletrônica, permanecendo essencialmente
+			inalterado. Foi popularizado na década de 1960 com o lançamento de folhas Letraset contendo passagens de
+			Lorem Ipsum e, mais recentemente, com software de editoração eletrônica como Aldus PageMaker, incluindo
+			versões de Lorem Ipsum.
+		</p>
+		<br><br><br><br><br>
+
+		<!--Customização de fontes-->
+		<h1 class="custom1">Lorem ipsum dolor sit, amet exercita</h1>
+
+		<p class="custom2">Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica estrutural.</p>
+		<br><br><br><br>
+
+		<!--Links-->
+		<a class="links" href="#">Cadastrar</a>
+		<a class="links1" href="#1">Cadastrar</a>
+
+		<!--Deixar tudo clicável-->
+		<h1>Lista de contatos:</h1>
+		<ul>
+			<li>
+				<b>Nome:</b> Marco Tulio <br>
+				<b>Site:</b> <a href="https:gamersclub.com.br" target="_blank"> Gamersclub </a>
+				<!--Tag target blank indica para abrir em nova guia.--> <br>
+				<b>Instagram:</b> <a href="https:instagram.com/marcot.v" target="_blank"> @marcot.v </a>
+				<!--Para abrir no navegador.--> <br>
+				<b>Instagram:</b> <a href="instagram://user?username=marcot.v"> @marcot.v </a>
+				<!--Para abrir no aplicativo-->
+			</li>
+			<br>
+			<li>
+				<b>Nome:</b> Marco Tulio <br>
+				<b>Tel:</b> <a href="tel:+5564993300978">+5564993300978</a>
+			</li>
+			<br>
+			<li>
+				<b>Nome:</b> Marco Tulio <br>
+				<b>WhatsApp: </b> <a href="https:wa.me/5564993300978" target="_blank"> +5564993300978</a>
+				<!--Para abrir no navegador.--> <br>
+				<b>WhatsApp: </b> <a href="whatsapp://5564993300978"> +5564993300978 </a>
+				<!--Para abrir no aplicativo-->
+			</li>
+			<br>
+			<li>
+				<b>Nome:</b> Marco Tulio <br>
+				<b>Email:</b> <a href="mailto:marcotulio_iub@hotmail.com"> marcotulio_iub@hotmail.com </a>
+			</li>
+		</ul>
+
+		<br><br><br><br>
+		<!--Tag Lang-->
+		<!--Se toda a página estiver em um unico idioma, a tag lang seria colocada na tag html, pegando toda a página.-->
+		<div lang="en">
+			<!--Indica que todo texto aqui esta em Ingles.-->
+			Texto em português.
+		</div>
+
+		<div lang="pt-br">
+			<!--Indica que todo texto aqui esta em Portgues.-->
+			Text in english.
+		</div>
+
+		<br><br><br><br>
+		<!--Alinhamento Horizontal-->
+		<div id="quadrado">
+		</div>
+		<br><br><br>
+		<div>
+			<img src="./imagens/cod.jpg" alt="Código" id="imagem">
+		</div>
+
+		<br><br><br><br>
+		<!--Alinhamento Vertical-->
+		<div class="vertical">
+			<div class="c1">
+				Marco Tulio
+			</div>
+		</div>
+		<div class="vertical">
+			<div class="c2">
+				Marco Tulio
+			</div>
+		</div>
+
+		<br><br><br><br>
+		<!--Posicionamento-->
+		<div class="quadro">
+			<div class="quadrado quadrado-red"></div>
+			<div class="quadrado quadrado-blue"></div>
+			<div class="quadrado quadrado-green"></div>
+		</div>
+
+		<br><br><br><br>
+		<!--Viewport-->
+		<div>
+			<img class="cod" src="./imagens/cod.jpg">
+
+			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui omnis architecto beatae, dolore similique delectus numquam expedita asperiores officia, iste distinctio laborum harum nisi aliquid magni? Fugit doloribus esse in.</p>
+		</div>
+
+		<br><br><br><br>
+		<!--Responsividade-->
+		<div class="header">
+		</div>
+		
+		<br><br><br><br>
+		<!--Media Queries-->
+		<div class="header1">
+			<div class="logo">
+				Logo
+			</div>
+			<ul class="menu">
+				<li class="li1">Home</li>
+				<li class="li1">Menu</li>
+				<li class="li1">Contato</li>
+				<li class="li1">Quem somos</li>
+			</ul>
+		</div>
+
+		<br><br><br><br>
+		<!--Cursores-->
+		<div class="card">
+			<h1>Qual tag usamos em CSS interno?</h1>
+			<ol class="ol1">
+				<li class="li2">&ltlink&gt</li>
+				<li class="li2">&lthead&gt</li>
+				<li class="li2">&ltstyle&gt</li>
+			</ol>
+		</div>
+</body>
+
+</html>
